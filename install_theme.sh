@@ -9,7 +9,7 @@ if [[ `id -u` -ne 0 ]] ; then
 	exit 1
 fi 
 
-THEME_DIR="/boot/grub/themes"
+THEME_DIR="/boot/grub/themes/steinsgrub"
 mkdir -p "$THEME_DIR"
 
 if ! cp "$D"/steinsgrub/theme.txt "$D"/steinsgrub/*.pf2 "$D"/steinsgrub/*.png "$THEME_DIR"/; then
