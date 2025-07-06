@@ -1,0 +1,103 @@
+title-text: ""
+desktop-image: "background.png"
+
+# TERMINAL
+terminal-border: "20"
+terminal-left: "20%"
+terminal-top: "20%+23"
+terminal-width: "60%"
+terminal-height: "60%"
+terminal-box: "term_*.png"
+terminal-font: "IBM Plex Mono Regular 22"
+
+
+# BOOT ITEMS
++ boot_menu {
+	left = 2%
+	top = 30%
+	width = 600
+	height = 500
+	
+	item_font = "Orbitron regular 30"
+	item_color = white
+	selected_item_color = #FF800C
+	item_height = 30
+	item_padding = 0
+	item_icon_space = -20
+	item_spacing = 45
+	item_pixmap_style = "item_*.png"
+	selected_item_pixmap_style = "selected_item_*.png"
+	scrollbar = false
+	}
+
+# BOOT ITEMS SHADOW
++ boot_menu {
+	left = 2%-1
+	top = 30%-1
+	width = 600
+	height = 500
+	
+	item_font = "Orbitron Regular 30"
+	item_color = white
+	selected_item_color = white
+	item_height = 30
+	item_icon_space = -20
+	item_spacing = 45
+	scrollbar = false
+}
+
+# COUNTDOWN TEXT
++ label {
+	id = "__timeout__"
+	
+	left = 50%
+	top = 100%-50
+	height = 24
+	width = 50%-6	
+	
+	text = "Left %d seconds"
+	align = "right"
+	color = "white"
+}
+
+# COUNTDOWN TEXT SHADOW 
++ label {
+	id = "__timeout__"
+
+	left = 50%+3
+	top = 100%-47
+	height = 24
+	width = 50%-6
+
+	text = "Left %d seconds"
+	align = "right"
+	color = "#3F3F3F"
+}
+
+# COMMANDS
++ label {
+	left = 2%
+	top = 100%-50
+	height = 30
+	widht = 600
+
+	color = "white"
+	align = "left"
+
+	text = "@KEYMAP_SHORT@"
+	font = "Orbitron regular 30"
+	}
+
+# COMMANDS SHADOW
++ label {
+	left = 2%+3
+	top = 100%-47
+	height = 30
+	width = 600
+
+	color = "#3F3F3F"
+	align = "left"
+
+	text = "@KEYMAP_SHORT@"
+	font = "Orbitron regular 30"
+}
